@@ -1,0 +1,182 @@
+
+
+
+.content-interno {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    margin: 0 -10px; 
+    padding: 0 10px;
+}
+.content-interno::-webkit-scrollbar { display: none; }
+
+
+.abas-filtro {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    scrollbar-width: none;
+}
+.abas-filtro::-webkit-scrollbar { display: none; }
+
+.aba {
+    background-color: white; 
+    border: 1.5px solid #E0E0E0;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--cor-texto-secundario);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.aba.ativa {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: white;
+}
+
+
+.lista-conteudos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-conteudo {
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    border: 1px solid #F8F8F8;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-conteudo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122, 108, 255, 0.1);
+}
+
+.card-icone {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.card-icone .material-symbols-rounded {
+    font-size: 28px;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+    background-color: var(--cor-primaria-clara);
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.card-info h4 {
+    font-size: 14px;
+    color: var(--cor-texto-principal);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.card-info p {
+    font-size: 11px;
+    color: var(--cor-texto-secundario);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn-acessar {
+    background: none;
+    border: none;
+    color: #C0C0C0;
+    cursor: pointer;
+}
+
+.bottom-nav {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 75px; background-color: white;
+    border-top: 1px solid #f0f0f0; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;
+    display: flex; justify-content: space-evenly; align-items: center; box-shadow: 0 -5px 15px rgba(0,0,0,0.03);
+}
+
+.nav-item {
+    background: none; border: none; cursor: pointer; color: var(--cor-texto-secundario);
+    transition: all 0.2s; display: flex; align-items: center; justify-content: center;
+}
+
+.nav-item.ativo, .nav-item:hover { color: var(--cor-primaria); transform: translateY(-3px); }
+.nav-item .material-symbols-rounded { font-size: 32px; }
+
+.emergencia {
+    background-color: var(--cor-erro); color: white; width: 55px; height: 55px; border-radius: 50%;
+    margin-top: -30px; box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4); border: 4px solid white;
+}
+.emergencia:hover { background-color: #C0392B; transform: scale(1.1); color: white; }
+
+.card-video {
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    border: 1px solid #F8F8F8;
+}
+
+.card-video h4 {
+    font-size: 15px;
+    color: var(--cor-texto-principal);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.card-video p {
+    font-size: 12px;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

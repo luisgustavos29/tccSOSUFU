@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS UFU - Categorias</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/globais.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/conteudos.css">
+</head>
+<body>
+    <main class="container-auth">
+        <div class="mobile-wrapper" style="position: relative;">
+            
+            <header class="header-auth" style="margin-bottom: 20px;">
+                <button class="btn-voltar" id="btn-voltar" aria-label="Voltar">
+                    <span class="material-symbols-rounded">arrow_back_ios_new</span>
+                </button>
+                <h2>Materiais</h2>
+                <div style="width: 24px;"></div>
+            </header>
+
+            <section class="boas-vindas" style="margin-bottom: 25px;">
+                <h1 class="titulo-bemvindo" style="font-size: 20px;">Explore por Categoria</h1>
+                <p class="texto-descricao">Escolha um tema abaixo para acessar conteúdos de apoio.</p>
+            </section>
+
+            <div class="content-interno"> 
+                
+                <div class="lista-conteudos">
+                    
+                    <article class="card-conteudo" onclick="window.location.href='lista-videos.html?categoria=tecnicas'">
+                        <div class="card-icone" style="background-color: #E8F8F5; color: #1ABC9C;">
+                            <span class="material-symbols-rounded">psychiatry</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Técnicas</h4>
+                            <p>Exercícios práticos de respiração e controle de ansiedade.</p>
+                        </div>
+                        <button class="btn-acessar" title="Ver vídeos">
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                        </button>
+                    </article>
+
+                    <article class="card-conteudo" onclick="window.location.href='lista-videos.html?categoria=estudos'">
+                        <div class="card-icone" style="background-color: #FEF9E7; color: #F1C40F;">
+                            <span class="material-symbols-rounded">menu_book</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Estudos</h4>
+                            <p>Dicas de organização de tempo, foco e produtividade na UFU.</p>
+                        </div>
+                        <button class="btn-acessar" title="Ver vídeos">
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                        </button>
+                    </article>
+
+                    <article class="card-conteudo" onclick="window.location.href='lista-videos.html?categoria=bem-estar'">
+                        <div class="card-icone" style="background-color: #EBDEF0; color: #9B59B6;">
+                            <span class="material-symbols-rounded">self_improvement</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Bem-estar</h4>
+                            <p>Hábitos saudáveis, higiene do sono e qualidade de vida.</p>
+                        </div>
+                        <button class="btn-acessar" title="Ver vídeos">
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                        </button>
+                    </article>
+
+                </div>
+                
+                <div style="height: 100px;"></div> 
+            </div>
+
+            <nav class="bottom-nav">
+                <button class="nav-item" title="Início" onclick="window.location.href='dashboard.html'">
+                    <span class="material-symbols-rounded">home</span>
+                </button>
+                <button class="nav-item ativo" title="Conteúdos">
+                    <span class="material-symbols-rounded">menu_book</span>
+                </button>
+                <button class="nav-item emergencia" id="btn-emergencia-nav" title="Ligar para o CVV 188">
+                    <span class="material-symbols-rounded" style="color: white; font-size: 28px;">call</span>
+                </button> 
+            </nav>
+
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/conteudos.js"></script>
+</body>
+</html>

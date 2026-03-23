@@ -1,0 +1,43 @@
+
+
+:root {
+  
+  --cor-primaria: #7A6CFF; 
+  --cor-primaria-clara: #ECE9FF; 
+  --cor-primaria-hover: #6556EB; 
+  
+  /* Cores de Fundo e Textos */
+  --cor-fundo: #FFFFFF; 
+  --cor-fundo-card: #FFFFFF;
+  --cor-texto-principal: #333333; 
+  --cor-texto-secundario: #666666;
+  
+  
+  --cor-erro: #E74C3C;
+  
+ 
+  --fonte-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-principal);
+  display: flex;
+  flex-direction: column;
+  /* 👇 AQUI ESTÁ A MÁGICA: Travamos o corpo para não rolar a página inteira 👇 */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Classe utilitária para esconder elementos dinamicamente no JS */
+.oculto {
+  display: none !important;
+}

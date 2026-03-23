@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS UFU - Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/globais.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <main class="container-auth">
+        <div class="mobile-wrapper" style="padding: 0; position: relative; overflow: hidden;">
+            
+            <div class="content-scroll">
+                
+                <header class="header-dash">
+                    <div class="perfil-info">
+                        <div class="foto-perfil">
+                            <span class="material-symbols-rounded" style="color: var(--cor-primaria);">person</span>
+                        </div>
+                        <div>
+                            <p class="boas-vindas-texto">Bem-vindo(a)</p>
+                            <h2 id="nome-usuario" class="nome-texto">Estudante</h2>
+                        </div>
+                    </div>
+                    <div class="icones-topo">
+                        <button class="btn-icone" title="Sair do App" onclick="sair()">
+                            <span class="material-symbols-rounded" style="color: var(--cor-texto-secundario);">logout</span>
+                        </button>
+                    </div>
+                </header>
+
+                <section class="boas-vindas-dash">
+                    <h3>Como podemos apoiar hoje?</h3>
+                    <p>Encontre profissionais disponíveis ou acesse nossos materiais de apoio.</p>
+                </section>
+
+                <section class="banner-agendamento" onclick="window.location.href='psicologos.html'">
+                    <div class="banner-texto">
+                        <h2>Agendar<br>Nova Consulta</h2>
+                        <p style="font-size: 12px; margin-top: 5px;">Veja os psicólogos disponíveis</p>
+                    </div>
+                    <div class="banner-icone">
+                        <span class="material-symbols-rounded" style="font-size: 48px;">calendar_month</span>
+                    </div>
+                </section>
+
+                <h3 class="titulo-secao">Meus Acessos</h3>
+                <section class="grid-modulos">
+                    <button class="card-modulo" onclick="window.location.href='sessoes.html'">
+                        <div class="icone-modulo">
+                            <span class="material-symbols-rounded" style="font-size: 32px; color: var(--cor-primaria);">event_available</span>
+                        </div>
+                        <p>Minhas<br>Sessões</p>
+                    </button>
+                    <button class="card-modulo" onclick="window.location.href='conteudos.html'">
+                        <div class="icone-modulo">
+                            <span class="material-symbols-rounded" style="font-size: 32px; color: var(--cor-primaria);">menu_book</span>
+                        </div>
+                        <p>Conteúdos<br>de Apoio</p>
+                    </button>
+                </section>
+                
+                <div style="height: 100px;"></div>
+            </div>
+
+            <nav class="bottom-nav">
+                <button class="nav-item ativo" title="Início">
+                    <span class="material-symbols-rounded">home</span>
+                </button>
+                <button class="nav-item" title="Conteúdos" onclick="window.location.href='conteudos.html'">
+                    <span class="material-symbols-rounded">menu_book</span>
+                </button>
+                <button class="nav-item emergencia" id="btn-emergencia" title="Ligar para o CVV 188">
+                    <span class="material-symbols-rounded" style="color: white; font-size: 28px;">call</span>
+                </button> 
+            </nav>
+
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

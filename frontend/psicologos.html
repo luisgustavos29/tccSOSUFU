@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS UFU - Profissionais</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/globais.css">
+    <link rel="stylesheet" href="css/auth.css"> <link rel="stylesheet" href="css/conteudos.css"> <link rel="stylesheet" href="css/psicologos.css"> </head>
+<body>
+    <main class="container-auth">
+        <div class="mobile-wrapper" style="position: relative;">
+            
+            <header class="header-auth" style="margin-bottom: 20px;">
+                <button class="btn-voltar" onclick="window.location.href='dashboard.html'" aria-label="Voltar">
+                    <span class="material-symbols-rounded">arrow_back_ios_new</span>
+                </button>
+                <h2>Profissionais</h2>
+                <div style="width: 24px;"></div>
+            </header>
+
+            <section class="boas-vindas" style="margin-bottom: 25px;">
+                <h1 class="titulo-bemvindo" style="font-size: 20px;">Agendar Acolhimento</h1>
+                <p class="texto-descricao">Escolha um profissional de psicologia para o seu atendimento.</p>
+            </section>
+
+            <div class="content-interno"> 
+                
+                <div id="lista-psicologos">
+                    <p style="text-align: center; color: var(--cor-texto-secundario);">Buscando profissionais...</p>
+                </div>
+                
+                <div style="height: 100px;"></div> 
+            </div>
+
+            <nav class="bottom-nav">
+                <button class="nav-item ativo" title="Início" onclick="window.location.href='dashboard.html'">
+                    <span class="material-symbols-rounded">home</span>
+                </button>
+                <button class="nav-item" title="Conteúdos" onclick="window.location.href='conteudos.html'">
+                    <span class="material-symbols-rounded">menu_book</span>
+                </button>
+                <button class="nav-item emergencia" id="btn-emergencia-nav" title="Ligar para o CVV 188">
+                    <span class="material-symbols-rounded" style="color: white; font-size: 28px;">call</span>
+                </button> 
+            </nav>
+
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/psicologos.js"></script>
+</body>
+</html>

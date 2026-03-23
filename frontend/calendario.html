@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS UFU - Agendar Acolhimento</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/globais.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/calendario.css"> 
+</head>
+<body>
+    <main class="container-auth">
+        <div class="mobile-wrapper wrapper-calendario">
+            
+            <div style="padding: 30px 25px 10px 25px; flex-shrink: 0; background-color: var(--cor-fundo); z-index: 5; border-radius: 35px 35px 0 0;">
+                <header class="header-auth" style="margin-bottom: 20px;">
+                    <button class="btn-voltar" onclick="history.back()" aria-label="Voltar">
+                        <span class="material-symbols-rounded">arrow_back_ios_new</span>
+                    </button>
+                    <h2 style="font-size: 18px; font-weight: 600; color: var(--cor-texto-principal); margin:0;">Agendamento</h2>
+                    <div style="width: 24px;"></div>
+                </header>
+
+                <section class="perfil-psicologo" style="margin-bottom: 0;">
+                    <img id="foto-psicologo-tela" src="" alt="Foto do Psicólogo" class="foto-psicologo-img" style="display: none;">
+                    <div class="foto-redonda" id="icone-fallback">
+                        <span class="material-symbols-rounded">psychology</span>
+                    </div>
+                    <h2 class="nome-psicologo" id="nome-psicologo-tela">Carregando...</h2>
+                    <p class="especialidade" id="especialidade-tela">Buscando informações...</p>
+                </section>
+            </div>
+
+            <div class="conteudo-scroll" style="padding: 10px 25px 100px 25px;">
+                <section class="secao-horarios">
+                    <div class="grid-horarios" id="lista-horarios">
+                        <p class="especialidade" style="grid-column: span 2; text-align: center;">Buscando horários...</p>
+                    </div>
+                </section>
+
+                <div class="container-botoes-acao">
+                    <p id="msg-agendamento" class="msg-feedback" style="display: none;"></p>
+                    <button type="button" class="btn-primario" id="btn-confirmar" disabled style="width: 100%;">Confirmar Agendamento</button>
+                </div>
+            </div>
+
+            <nav class="bottom-nav">
+                <button class="nav-item" title="Início" onclick="window.location.href='dashboard.html'">
+                    <span class="material-symbols-rounded">home</span>
+                </button>
+                <button class="nav-item ativo" title="Conteúdos" onclick="window.location.href='conteudos.html'">
+                    <span class="material-symbols-rounded">menu_book</span>
+                </button>
+                <button class="nav-item emergencia" id="btn-emergencia" title="Ligar para o CVV 188" onclick="if(confirm('Ligar para o CVV (188)?')) window.location.href='tel:188'">
+                    <span class="material-symbols-rounded">call</span>
+                </button> 
+            </nav>
+
+        </div>
+    </main>
+
+    <script src="js/calendario.js"></script>
+</body>
+</html>
