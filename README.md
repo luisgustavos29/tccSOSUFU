@@ -41,13 +41,13 @@ O sistema já conta com um script contendo a estrutura das tabelas e dados simul
    ```Snippet de código
    DB_HOST=localhost
    DB_USER=root
-   DB_PASS=sua_senha_do_mysql
+   DB_PASS=sua_senha_aqui
    DB_NAME=sos_ufu
-   JWT_SECRET=chave_secreta_sos_ufu
+   PORT=3000
    ```
 4. Inicie o servidor:
    ```bash
-   npm start
+   npm run dev
 ### 3. Executando a Interface (Frontend)
 
 1. Navegue até o diretório `frontend/`.
@@ -58,5 +58,5 @@ O sistema já conta com um script contendo a estrutura das tabelas e dados simul
 
 ---
 
-👨‍💻 Desenvolvido por [Luís Gustavo](https://github.com/SEU_USUARIO_AQUI)
+👨‍💻 Desenvolvido por [Luís Gustavo](https://github.com/luisgustavos29)
 
