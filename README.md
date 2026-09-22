@@ -2,6 +2,8 @@
 
 Este repositório contém o Produto Mínimo Viável (MVP) do **SOS UFU**, uma plataforma digital desenvolvida como meu Trabalho de Conclusão de Curso (TCC) em Sistemas de Informação. O objetivo é facilitar e desburocratizar o acesso de estudantes a atendimento psicológico voluntário e a conteúdos de bem-estar.
 
+📄 [Acesse a documentação completa aqui](docs/LuisGustavoMonografia.pdf)
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
